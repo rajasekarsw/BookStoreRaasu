@@ -14,8 +14,8 @@ A comprehensive test automation suite for the BookStore API, developed using Jav
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/bookapi-tests.git
-   cd RestAssuredRasu
+   git clone https://github.com/your-username/BookStoreRaasu.git
+   cd BookStoreRaasu
 2. set env as QA in config file using, env=QA
 3. Run the Scenarios
    ```bash
