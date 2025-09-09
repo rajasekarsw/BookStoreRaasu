@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BookStore API suite">
+    <listeners>
+        <listener class-name="com.bookstoreapi.listener.ListenerClass"/>
+    </listeners>
+    <test name="BookStore API tests">
+        <classes>
+            <class name="com.bookstoreapi.testcases.ServerRunningCheck"/>
+            <class name="com.bookstoreapi.testcases.UserSignUpClass"/>
+            <class name="com.bookstoreapi.testcases.LoginForAccessToken"/>
+            <class name="com.bookstoreapi.testcases.CreateBook"/>
+            <class name="com.bookstoreapi.testcases.GetAllTheBooks"/>
+            <class name="com.bookstoreapi.testcases.UpdateBook"/>
+            <class name="com.bookstoreapi.testcases.TokenTestcases"/>
+            <class name="com.bookstoreapi.testcases.IncorrectJsonFormat"/>
+            <class name="com.bookstoreapi.testcases.DeleteBook"/>
+        </classes>
+    </test>
+</suite>

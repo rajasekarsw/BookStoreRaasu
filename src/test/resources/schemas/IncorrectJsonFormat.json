@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Error Response Schema",
+  "type": "object",
+  "properties": {
+    "detail": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string" },
+          "loc": {
+            "type": "array",
+            "items": [
+              { "type": "string" },
+              { "type": "integer" }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "msg": { "type": "string" },
+          "input": { "type": "object" },
+          "ctx": {
+            "type": "object",
+            "properties": {
+              "error": { "type": "string" }
+            },
+            "required": ["error"]
+          }
+        },
+        "required": ["type", "loc", "msg", "input", "ctx"]
+      }
+    }
+  },
+  "required": ["detail"]
+}

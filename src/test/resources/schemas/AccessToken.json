@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Authentication Response",
+  "type": "object",
+  "properties": {
+    "access_token": {
+      "type": "string",
+      "minLength": 1
+    },
+    "token_type": {
+      "type": "string",
+      "enum": ["bearer", "Bearer"]
+    }
+  },
+  "required": ["access_token", "token_type"],
+  "additionalProperties": false
+}
