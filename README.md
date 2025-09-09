@@ -23,7 +23,7 @@ A comprehensive test automation suite for the BookStore API, developed using Jav
 4.  Reports are generated with a time stamped named for easy identification
     cd BookStoreRasu/extentreports
 
-🧪 ### Running Tests in CI
+🧪 Running Tests in CI
 
 The project includes a GitHub Actions workflow located at .github/workflows/maven.yml. This workflow:
 
@@ -130,7 +130,7 @@ src/main/java/
     │   └── ListenerClass.java          # For listening testcase events
     └── model                  
     │   └── request/                    # Model the request payload 
-    │   └── response/                   # Model the rsponse body
+    │   └── response/                   # Model the response body
     │
     │── utils/
     │   └── ConfigReader.java           # access config.properties file
@@ -140,7 +140,7 @@ src/test/java/
 └── com/bookapi/testcases/              # All the testcases are written here
                          
 src/test/resources/
-└── schemas/                            # contains the response schemas for validation
+└── schemas/                            # contains the response schemas file for validation
 
 config.properties                       
 pom.xml                                     
